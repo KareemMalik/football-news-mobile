@@ -82,7 +82,7 @@ class MyHomePage extends StatelessWidget {
 
                     // Menampilkan ItemCard untuk setiap item dalam list items.
                     children: items.map((ItemHomepage item) {
-                      return NewsCard(item);
+                      return ItemCard(item);
                     }).toList(),
                   ),
                 ],
@@ -128,4 +128,11 @@ class InfoCard extends StatelessWidget {
       ),
     );
   }
+}
+
+class ItemHomepage {
+  final String name;
+  final IconData icon;
+
+  ItemHomepage(this.name, this.icon);
 }
